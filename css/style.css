@@ -1,0 +1,25 @@
+.about {
+    background-color: #2C2D3F;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 60px;
+    margin: 0 auto;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about__images {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
