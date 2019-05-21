@@ -1,6 +1,7 @@
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
@@ -11,7 +12,7 @@ h2 {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    font-size: 50px;  
+    font-size: 26px;  
 }
 
 
@@ -26,10 +27,22 @@ h2 {
     display: flex;
 }
 
+.about__subtitle--green {
+    color:#15C78C;
+    font-weight: bold;
+}
+
+.about__title {
+    width: 40%;
+}
+
+.about__title p {
+    margin: 3vh 0;
+}
+
 .about__container {
-    width: 50%;
+    width: 70%;
     margin: auto;
-    text-align: start;
 }
 
 .title__line {
@@ -41,19 +54,20 @@ h2 {
 .about__content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin: 0 auto;
+    justify-content: space-between;
+    width: 40%;
 }
 
-.about__images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about__img {
+    text-align: center;
 }
 
-.about__images--gym {
-    width: 80%;
+.about__img--gym {
+    width: 50%;
+}
+
+.about__img--user {
+    width: 65%;
 }
 
 .about__bg {
@@ -82,6 +96,13 @@ h2 {
 }
 
 
+@media only screen and (max-width: 768px) {
+    .about__bg {
+        display: none;
+    }
+}
+
+
 /* COMO FUNCIONA */
 
 .function {
@@ -89,30 +110,64 @@ h2 {
     position: relative;
     padding: 20px;
     display: flex;
-    align-items: flex-end;
+    padding-bottom: 18vh;
 }
 
-.function__content {
+.function__container {
     width: 70%;
     margin: auto;
 }
 
-.function__images {
+.function__img {
+    display: inline-block;
     margin-top: 3%;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
 }
 
-.function__images img {
+.function__img img {
     width: 30%;
-    height: 30%;
+    border-radius: 10px;
+}
+
+.function__images div {
+    z-index: 100;
 }
 
 .function__bg {
-    width: 70%;
-    opacity: 0.31;
+    width: 90%;
+    height: 90%;
+    z-index: 0;
     position: absolute;
-    display: flex;
-    align-items: flex-end;
+}
+
+.function__bg--circle {
+    background-image: url("../img/bg-circle-2.png");
+    width: 23vw;
+    height: 83vh;
+    opacity: 0.3;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.function__bg--number {
+    width: 11vw;
+    height: 80vh;
+    background-image: url("../img/2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .function__images {
+        align-items: center;
+        flex-direction: column;
+    }
+    .function__images img {
+        width: 70vw;
+    }
+
+    .function__bg {
+        display: none;
+    }
 }
