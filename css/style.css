@@ -1,0 +1,136 @@
+/*GERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*NAV + BANNER*/
+
+.logo {
+    margin-left: 3.125rem;
+}
+
+.list {
+    margin-right: 3.125rem;
+    text-transform: uppercase;
+}
+
+.nav-item > a {
+    color: #333333; 
+    font-weight: 700;
+}
+
+.nav-item > a:hover {
+    color: #01FDAF;
+}
+
+.dropdown {
+    display: none;
+}
+
+.banner {
+    background-image: url("../img/banner-bg.png");
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner__title {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.1875rem;
+}
+
+.title-style {
+    /* padding-top: 24.375rem;
+    padding-left: 39.375rem; */
+    font-weight: 700;
+}
+
+.banner__subtitle {
+    text-transform: uppercase;
+    font-size: 2.1875rem;
+    color:#01FDAF;
+}
+
+.circles-position {
+    position: relative;
+}
+
+.circles-img {
+    position: absolute;
+    bottom: 1vh;
+    right: 86vw;
+    opacity: 0.4;
+}
+
+/*NEWSLETTER*/
+
+.newsletter {
+    text-align: center;
+    background-color:#15c78c;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.newsletter-title {
+    padding: 1.2rem;
+}
+
+.newsletter-email {
+    border-radius: 3.125rem 0 0 3.125rem;
+    border: none;
+    padding: 0.8rem;
+    width: 40%;
+}
+
+.newsletter-email:focus {
+    outline: none;
+}
+
+.newsletter-button {
+    border: none;
+    border-radius: 0 3.125rem 3.125rem 0;
+    padding: 0.8rem;
+    background-color:#2C2D3F;
+    color:#15c78c;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1024px) {
+    /*NAV*/
+
+    li {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+    
+    .title-style {
+        padding: 0;
+    }
+
+
+    /*BANNER*/
+
+    .banner {
+        background-position: top;
+    }
+
+}

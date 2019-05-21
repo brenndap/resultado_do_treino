@@ -6,12 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <title>Resultado do treino</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav></nav>
+
+    <!--NAV + BANNER-->
+
+    <header id="top">
+
+        <nav class="navbar navbar-light bg-light">
+
+                <a class="navbar-brand" href="#top">
+                    <img class="logo" src="./img/component.png" alt="logomarca do site: um R verde e um T preto">
+                </a>
+
+            <ul class="nav justify-content-end list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Para quem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#function">Como funciona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#app">Aplicativo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#packages">Pacotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#about">Para quem</a>
+                    <a class="dropdown-item" href="#function">Como funciona</a>
+                    <a class="dropdown-item" href="#app">Aplicativo</a>
+                    <a class="dropdown-item" href="#packages">Pacotes</a>
+                    <a class="dropdown-item" href="#contact">Contato</a>
+                </div>
+            </div>
+
+        </nav>
         
+        <section class="banner title-style">
+            <div class="circles-position">
+                <img class="circles-img" src="./img/bg-circle.png" alt="círculos trasparentes para estilizar o banner">
+            </div>
+            
+            <div><p class="banner__title">Frase resumo do app <span class="banner__subtitle">Motivacional</span></p></div>
+        </section>
+
     </header>
+
+
+    <!--NEWSLETTER-->
+
+    <section class="newsletter">
+        <h3 class="newsletter-title">Receba todas as novidades por e-mail</h3>
+        <input class="newsletter-email" type="email"><button class="newsletter-button">Inscreva-se</button>
+    </section>
+
     <main>
 
         <section></section>
@@ -22,6 +82,11 @@
 
     </main>
     <footer></footer>
-    <script src="./js/script.js"></script>
+
+<script src="./js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
