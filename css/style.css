@@ -14,7 +14,7 @@ body {
     margin: 0px 6px;
     }
 
-h2 {
+.title {
     font-weight: normal;
     color: #fff;
     text-transform: uppercase;
@@ -36,27 +36,33 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .packages__box {
+        flex-direction: column;
+    }
+    .packages__bg {
+        display: none;
+    }
 }
 
 .packages__deal {
-    background-color: #00FFB0;
+    background-color: #19CB94;
+    border-radius: 10px;
     color: #2C2D3F;
     text-transform: uppercase;
     text-align: center;
     padding: 30px;
     margin: 30px;
-    width: 100vh;
-}
-
-.packages__deal:nth-child(even) {
-    background-color: #19CB94;
 }
 
 .packages__text {
     margin: 30px;
     font-size: 14px;
     font-weight: 700;
+    min-height: 200px;
+    min-width: 200px;
 }
 
 .btn {
@@ -75,27 +81,19 @@ h3 {
     background-color: rgb(61, 63, 87);
 }
 
-.packages__bg {
-    width: 100vh;
-}
-
 .packages__bg--circles {
     background-image: url("../img/bg-circle.png");
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 30vh;
+    height: 300px;
+    width: 200px;
+    margin-top: -75px;
 }
 
 .packages__bg--number4 {
     background-image: url("../img/4.png");
     background-repeat: no-repeat;
-    width: 40vh;
-    height: 30vh;
-}
-
-.packages__footer {
-    flex: 0 1 24%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    margin-top: -90px;
 }
