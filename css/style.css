@@ -1,13 +1,41 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;  
+}
+
+
+/* PARA QUEM */
+
 .about {
     background-color: #2C2D3F;
     color: #ffffff;
     font-family: sans-serif;
-    text-align: center;
+    text-align: left;
+    padding: 20px;
+    display: flex;
 }
 
-.about__title {
-    font-size: 60px;
-    margin: 0 auto;
+.about__container {
+    width: 50%;
+    margin: auto;
+    text-align: start;
+}
+
+.title__line {
+    width: 100px;
+    border: solid 2px #15C78C;
+    margin: 18px 6px;
 }
 
 .about__content {
@@ -21,5 +49,70 @@
 .about__images {
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    align-items: center;
+}
+
+.about__images--gym {
+    width: 80%;
+}
+
+.about__bg {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+.about__bg--circle {
+    background-image: url("../img/bg-circle.png");
+    width: 100%;
+    height: 40%;
+    opacity: 0.31;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.about__bg--number {
+    width: 100%;
+    height: 40%;
+    background-image: url("../img/1.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
+/* COMO FUNCIONA */
+
+.function {
+    background-color: #373849;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.function__content {
+    width: 70%;
+    margin: auto;
+}
+
+.function__images {
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.function__images img {
+    width: 30%;
+    height: 30%;
+}
+
+.function__bg {
+    width: 70%;
+    opacity: 0.31;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
 }
