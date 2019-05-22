@@ -98,7 +98,27 @@ h3 {
     margin-top: -90px;
 }
 
-/* responsive mobile */
+/* responsive */
+
+@media (max-width: 1170px) {
+    .packages {
+        width: 100%;
+    }
+    .packages__deal {
+        width: 30%;
+    }
+
+    .packages__bg {
+        display: none;
+    }
+
+    .packages__box {
+        flex-direction: row;
+        background-image: url("../img/bg-circle.png");
+        background-repeat: repeat-y;
+        margin-top: 5px;
+    }
+}
 
 @media (max-width: 768px) {
     .packages {
@@ -107,13 +127,6 @@ h3 {
 
     .packages__box {
         flex-direction: column;
-        background-image: url("../img/bg-circle.png");
-        background-repeat: repeat-y;
-        margin-top: 5px;
-    }
-
-    .packages__bg {
-        display: none;
     }
     
     .packages__deal {
