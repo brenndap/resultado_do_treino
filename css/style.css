@@ -4,26 +4,30 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 .title__line {
-    width: 180px;
-    border: solid 2px #15C78C;
-    margin: 0px 6px;
+    width: 18rem;
+    border: solid 0.2rem #15C78C;
+    margin: 0rem 0.6rem;
     }
 
 .title {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    font-size: 50px;
-    margin-top: 0px;
+    font-size: 5rem;
+    margin-top: 0rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -31,7 +35,7 @@ h3 {
 
 .packages {
     background-color: #2C2D3F;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .packages__box {
@@ -42,12 +46,12 @@ h3 {
 
 .packages__deal {
     background-color: #19CB94;
-    border-radius: 10px;
+    border-radius: 1rem;
     color: #2C2D3F;
     text-transform: uppercase;
     text-align: center;
-    padding: 30px;
-    margin: 30px;
+    padding: 3rem;
+    margin: 3rem;
 }
 
 .packages__deal:hover {
@@ -55,11 +59,11 @@ h3 {
 }
 
 .packages__text {
-    margin-top: 70px;
-    font-size: 14px;
+    margin-top: 7rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 20rem;
+    min-width: 20rem;
 }
 
 /* button */
@@ -71,8 +75,8 @@ h3 {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     border: none;
-    padding: 10px 30px;
-    border-radius: 15px;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 
@@ -84,18 +88,18 @@ h3 {
 .packages__bg--circles {
     background-image: url("../img/bg-circle.png");
     background-repeat: no-repeat;
-    height: 300px;
-    width: 200px;
-    margin-top: -75px;
+    height: 30rem;
+    width: 20rem;
+    margin-top: -7.5rem;
 }
 
 .packages__bg--number4 {
     background-image: url("../img/4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 200px;
-    width: 200px;
-    margin-top: -90px;
+    height: 20rem;
+    width: 20rem;
+    margin-top: -9rem;
 }
 
 /* responsive */
@@ -116,7 +120,7 @@ h3 {
         flex-direction: row;
         background-image: url("../img/bg-circle.png");
         background-repeat: repeat-y;
-        margin-top: 5px;
+        margin-top: 0.5rem;
     }
 }
 
