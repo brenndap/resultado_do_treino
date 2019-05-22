@@ -27,6 +27,8 @@ h3 {
     font-weight: 700;
 }
 
+/* cards style */
+
 .packages {
     background-color: #2C2D3F;
     padding: 20px;
@@ -59,6 +61,8 @@ h3 {
     min-height: 200px;
     min-width: 200px;
 }
+
+/* button */
 
 .btn {
     text-transform: uppercase;
