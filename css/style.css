@@ -14,55 +14,62 @@ body {
 /*NAV + BANNER*/
 
 .logo {
-    margin-left: 3.125rem;
+    width: 14vw;
 }
 
 .list {
-    margin-right: 3.125rem;
     text-transform: uppercase;
 }
 
-.nav-item > a {
-    color: #333333; 
+.nav__hover a {
+    color: #2C2D3F; 
     font-weight: 700;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    
 }
 
-.nav-item > a:hover {
+.nav__hover a:active, .nav__hover a:link, .nav__hover a:visited {
+    text-decoration: none;
+}
+
+.nav__hover a:hover {
     color: #01FDAF;
-}
-
-.dropdown {
-    display: none;
 }
 
 .banner {
     background-image: url("../img/banner-bg.png");
     background-size: cover;
     height: 80vh;
-    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background-position: center 10%;
 }
 
-.banner__title {
-    text-transform: uppercase;
-    font-size: 35px;
-    color: #FFFFFF;
+.titleContainer {
     display: flex;
-    flex-direction: column;
-    line-height: 2.1875rem;
+    align-items: center;
+}
+
+.bannerTitle__white {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    color: #FFFFFF;
+    width: 50vw;
+    text-align: center;
 }
 
 .title-style {
-    /* padding-top: 24.375rem;
-    padding-left: 39.375rem; */
+    /* padding-bottom: 1.375rem; */
+    /* padding-left: 36.375rem; */
     font-weight: 700;
 }
 
-.banner__subtitle {
+.bannerTitle__green {
     text-transform: uppercase;
-    font-size: 2.1875rem;
+    font-size: 1.875rem;
     color:#01FDAF;
 }
 
@@ -72,8 +79,8 @@ body {
 
 .circles-img {
     position: absolute;
-    bottom: 1vh;
-    right: 86vw;
+    bottom: 15vh;
+    right: 40vw;
     opacity: 0.4;
 }
 
@@ -109,28 +116,33 @@ body {
     color:#15c78c;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-@media(max-width: 1024px) {
-    /*NAV*/
-
-    li {
-        display: none;
-    }
-
-    .dropdown {
-        display: flex;
-    }
-    
-    .title-style {
-        padding: 0;
-    }
-
-
-    /*BANNER*/
-
-    .banner {
-        background-position: top;
-    }
-
+.newsletter-button:hover {
+    color: #01FDAF;
+    background-color:rgb(75, 75, 85);
 }
+
+@media(max-width: 960px) {
+    .bannerTitle__white {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .logo {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 520px) {
+    .logo {
+        width: 25vw;
+    }
+
+    .bannerTitle__white {
+        max-width: 90vw;
+        text-align: center;
+    }
+}
+
