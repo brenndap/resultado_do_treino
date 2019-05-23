@@ -48,34 +48,11 @@ body {
     background-position: center 10%;
 }
 
-.bannerTitle {
-    position: relative;
-    top: 2vh;
-}
-
-.titleContainer {
-    display: flex;
-    align-items: center;
-}
-
-.bannerTitle__white {
-    text-transform: uppercase;
-    font-size: 1.875rem;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.title-style {
+.title__style {
     font-weight: 700;
 }
 
-.bannerTitle__green {
-    text-transform: uppercase;
-    font-size: 1.875rem;
-    color:#01FDAF;
-}
-
-.circles-position {
+.circles__position {
     background-image: url("../img/bg-circle.png");
     opacity: 0.3;
     width: 60%;
@@ -85,16 +62,23 @@ body {
     
 }
 
-/* .circles-position {
+.bannerTitle {
     position: relative;
+    top: 2vh;
 }
 
-.circles-img {
-    position: absolute;
-    bottom: 100px;
-    right: 250px;
-    opacity: 0.4;
-} */
+.bannerTitle__principal {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bannerTitle__checked {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    color:#01FDAF;
+}
 
 /*NEWSLETTER*/
 
@@ -105,22 +89,22 @@ body {
     padding: 2rem;
 }
 
-.newsletter-title {
+.newsletter__title {
     padding: 1.2rem;
 }
 
-.newsletter-email {
+.newsletter__email {
     border-radius: 3.125rem 0 0 3.125rem;
     border: none;
     padding: 0.8rem;
     width: 40%;
 }
 
-.newsletter-email:focus {
+.newsletter__email:focus {
     outline: none;
 }
 
-.newsletter-button {
+.newsletter__button {
     border: none;
     border-radius: 0 3.125rem 3.125rem 0;
     padding: 0.8rem;
@@ -131,7 +115,7 @@ body {
     cursor: pointer;
 }
 
-.newsletter-button:hover {
+.newsletter__button:hover {
     color: #01FDAF;
     background-color:rgb(75, 75, 85);
 }
@@ -151,19 +135,19 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    .bannerTitle__white, .bannerTitle__green {
+    .bannerTitle__principal, .bannerTitle__checked {
         font-size: 1.375rem;
     } 
 
-    .newsletter-title {
+    .newsletter__title {
         font-size: 1.125rem;
     }
 
-    .newsletter-button, .newsletter-email {
+    .newsletter__button, .newsletter__email {
         font-size: 0.875rem;
     }
 
-    .circles-position {
+    .circles__position {
         display: none;
     }
 }
