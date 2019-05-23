@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     
+
 }
 
 html {
@@ -15,10 +16,136 @@ body {
 }
 
 .title {
+
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 5rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* packages */
+
+.packages {
+    background-color: rgb(44, 45, 63);
+    padding: 2rem;
+}
+
+.packages__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.packages__deal {
+    background-color: rgb(25, 203, 148);
+    border-radius: 1rem;
+    color: rgb(44, 45, 63);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.packages__deal:hover {
+    background-color: rgb(30, 243, 176);
+}
+
+.packages__text {
+    margin-top: 7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    min-height: 20rem;
+    min-width: 20rem;
+}
+
+/* button */
+
+.btn {
+    text-transform: uppercase;
+    background-color: rgb(44, 45, 63);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(90, 93, 124);
+}
+
+.packages__bg--circles {
+    background-image: url("../img/bg-circle.png");
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 20rem;
+    margin-top: -7.5rem;
+}
+
+.packages__bg--number4 {
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20rem;
+    width: 20rem;
+    margin-top: -9rem;
+}
+
+/* responsive */
+
+@media (max-width: 1170px) {
+    .packages {
+        width: 100%;
+    }
+    .packages__deal {
+        width: 30%;
+    }
+
+    .packages__bg--number4,
+    .packages__bg--circles {
+        display: none;
+    }
+
+    .packages__box {
+        flex-direction: row;
+        background-image: url("../img/bg-circle.png");
+        background-repeat: repeat-y;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .packages {
+        width: 100%;
+    }
+
+    .title__line {
+        margin: 0 auto;
+        margin-bottom: 1.25rem;
+
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .packages__box {
+        flex-direction: column;
+    }
+    
+    .packages__deal {
+        width: 80%;
+
 }
 
 .title::-moz-selection {
@@ -266,5 +393,6 @@ body {
 @media (max-width: 768px){
     .footer__container {
         flex-direction: column;
+
     }
 }
