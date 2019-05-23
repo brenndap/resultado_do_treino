@@ -87,6 +87,7 @@ h3 {
 
 .packages__bg--circles {
     background-image: url("../img/bg-circle.png");
+    opacity: 0.2;
     background-repeat: no-repeat;
     height: 30rem;
     width: 20rem;
@@ -112,13 +113,15 @@ h3 {
         width: 30%;
     }
 
-    .packages__bg {
+    .packages__bg--number4,
+    .packages__bg--circles {
         display: none;
     }
 
     .packages__box {
         flex-direction: row;
         background-image: url("../img/bg-circle.png");
+        opacity: 0.8;
         background-repeat: repeat-y;
         margin-top: 0.5rem;
     }
@@ -127,6 +130,16 @@ h3 {
 @media (max-width: 768px) {
     .packages {
         width: 100%;
+    }
+
+    .title__line {
+        margin: 0 auto;
+        margin-bottom: 1.25rem;
+
+    }
+
+    .title {
+        text-align: center;
     }
 
     .packages__box {
