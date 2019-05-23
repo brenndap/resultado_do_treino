@@ -213,15 +213,14 @@ p::selection {
 
 @media only screen and (max-width: 768px) {
     .function__img {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        display: block;
     }
     .function__img img {
-        width: 70vw;
+        width: 64vw;
     }
 
     .function__bg {
         display: none;
     }
 }
+
