@@ -87,8 +87,8 @@ p::selection {
 
 .about__bg--circle {
     background-image: url("../img/bg-circle.png");
-    width: 90vw;
-    height: 50vh;
+    width: 100%;
+    height: 55%;
     opacity: 0.31;
     position: absolute;
     background-repeat: no-repeat;
@@ -96,8 +96,8 @@ p::selection {
 }
 
 .about__bg--number {
-    width: 85vw;
-    height: 50vh;
+    width: 95%;
+    height: 50%;
     background-image: url("../img/1.png");
     background-position: right top;
     background-repeat: no-repeat;
@@ -109,11 +109,11 @@ p::selection {
     .about__bg {
         display: none;
     }
-
+    
     .about__title {
         width: 100%;
     }
-
+    
     .about__content {
         justify-content: space-around;
         width: 100%;
@@ -152,38 +152,42 @@ p::selection {
     border-radius: 20px;
     z-index: 1;
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
-}
-
-.function__content--img:hover {
-    opacity: 0.5;
-    filter: grayscale();
+    margin: 0 auto;
 }
 
 .slide {
+    background-color: rgba(44, 45, 63, 0.623);
+    width: 91%;
+    height: 100%;
     position: absolute;
-    top: 2%;
-    left: 2%;
-    height: 95%;
-    width: 96%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 0;
     opacity: 0;
+    border-radius: 20px;
     transition: 0.5s ease;
-    background-color: #2C2D3F;
 }
 
 .slide p {
     color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    font-size: 1.25rem;
 }
 
 .function__content:hover .slide {
     opacity: 1;
+    transition: 0.5s ease;
+}
+
+.slide__text {
+    display: flex;
+    position: relative;
+    height: 10vh;
+    color: white;
 }
 
 .function__bg {
@@ -212,15 +216,29 @@ p::selection {
 }
 
 @media only screen and (max-width: 768px) {
+    .function__container {
+        width: 80%;
+    }
+    .function__content {
+        width: 100%;
+    }
     .function__img {
-        display: block;
+        display: flex;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
     }
-    .function__img img {
-        width: 64vw;
-    }
-
+    
     .function__bg {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .function__img {
+        height: 67vh;
     }
 }
 
