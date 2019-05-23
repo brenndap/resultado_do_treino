@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/CSSReset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Resultado do treino</title>
 </head>
@@ -20,75 +21,65 @@
 
     </header>
     <main>
-
         <section></section>
         <section></section>
         <section class="app"></section>
         <section></section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container contact__container">
-
-                <img class="circle circle--left" src="./img/bg-circle.png">
-
+                <div class="circle circle--left"></div>
                 <form action="" class="contact__form">
-                    <img class="contact__icon contact__icon--responsive" src="./img/contact.png" alt="">
+                    <div class="contact__icon contact__icon--responsive"></div>
                     <div class="form__title">
                         <hr class="title__line title__line--dark">
-                        <h2>Contato</h2>
-
+                        <h2 class="title">Contato</h2>
                     </div>
                     <div class="form-row">
                         <div class="form__field col">
-                            <label>Nome:</label>
-                            <input type="text" required>
+                            <label class="field__label">Nome</label>
+                            <input class="field__input" type="text" required>
                         </div>
                         <div class="form__field col">
-                            <label>Sobrenome:</label>
-                            <input type="text" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form__field col">
-                            <label>E-mail:</label>
-                            <input type="email" required>
-                        </div>
-                        <div class="form__field col">
-                            <label>Telefone:</label>
-                            <input type="text" required>
+                            <label class="field__label">Sobrenome</label>
+                            <input class="field__input" type="text" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form__field col">
-                            <label>Mensagem:</label>
-                            <textarea cols="20" rows="7" required></textarea>
+                            <label class="field__label">E-mail</label>
+                            <input class="field__input" type="email" required>
                         </div>
-
+                        <div class="form__field col">
+                            <label class="field__label">Telefone</label>
+                            <input class="field__input" type="text" required>
+                        </div>
                     </div>
-
+                    <div class="form-row">
+                        <div class="form__field col">
+                            <label class="field__label">Mensagem</label>
+                            <textarea class="field__input" cols="20" rows="7" required></textarea>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form__field col">
                             <input class="form__submit" type="submit" value="Enviar">
                         </div>
                     </div>
-
-
                 </form>
-
-                <img class="contact__icon" src="./img/contact.png" alt="">
-                <img class="circle circle--right-top" src="./img/bg-circle-2.png" alt="">
-                <img class="circle circle--right-bottom" src="./img/bg-circle-2.png" alt="">
-
-
+                <div class="contact__icon"></div>
+                <div class="circle circle--right-top"></div>
+                <div class="circle circle--right-bottom"></div>
             </div>
         </section>
-
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <p class="footer__text">Resultado do treino</p>
+            <p class="footer__text">N2BBrasil - Todos direitos reservados</p>
             <div class="footer__social-media">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a class="social-media__link" href="https://www.facebook.com/n2bbrasil/"><i class="fab fa-facebook-square"></i></a>
+                <a class="social-media__link" href="https://www.instagram.com/n2bbrasil/"><i class="fab fa-instagram"></i></a>
+                <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i class="fab fa-linkedin"></i></a>
+
             </div>
         </div>
     </footer>

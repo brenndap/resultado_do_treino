@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -10,9 +15,10 @@ body {
 }
 
 /* CONTACT SECTION */
+
 .contact {
-    background-color: #00FFB0;
-    padding: 30px 0px;
+    background: #00FFB0;
+    padding: 3rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -22,21 +28,30 @@ body {
     
 }
 .contact__form {
-    padding-left: 20px;
+    padding-left: 2rem;
+    font-size: 1.6rem;
     
 }
 
-.form__title h2 {
+.title {
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 5rem;
+}
+
+.title::-moz-selection {
+    background: #2C2D3F;
+}
+  
+.title::selection {
+    background: #2C2D3F;
 }
 
 .title__line {
-    width: 100px;
+    width: 10rem;
     border: solid 2px #15C78C;
-    margin: 10px 0px;
+    margin: 1rem 0;
 }
 
 .title__line {
@@ -46,26 +61,30 @@ body {
 .form__field {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
-.form__field > label {
+.field__label {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
-.form__field > input {
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
+.field__label::selection {
+    background: #2C2D3F;
+    color: #fff;
 }
 
-.form__field > textarea {
-    border-radius: 10px;
+.field__label::-moz-selection { 
+    background: #2C2D3F;
+    color: #fff;
+}
+
+.field__input {
+    border-radius: 1rem;
     border: none;
-    padding: 10px;
-    
+    padding: 1rem;
+    background-color: #fff;
 }
 
 .form__submit {
@@ -73,41 +92,66 @@ body {
     margin: 0 auto;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: #2C2D3F;
-    color: #fff;
+    /* background-color: #2C2D3F; */
+    background-color: transparent;
+    color: #000;
+    border-radius: 1rem;
+    border: solid 2px #000;
+    padding: 1rem;
+    transition-duration: 0.4s;
 }
 
 .form__submit:hover {
-    background-color: #3d3f57;
+    background-color: #000;
+    color: #00ffb0;
 }
 
-
 .circle {
-    width: 250px;
+    width: 25rem;
     position: absolute;
 }
 
 .circle--left {
-    padding-top: 60px;
-    left: 145px;
+    background-size: cover;
+    background-position: center;
+    height: 69%;
+    padding-top: 6rem;
+    left: 14.5rem;
+    background-image: url(../img/bg-circle.png);
+    width: 14%;
+    bottom: 11rem;
+    background-repeat: no-repeat;
 }
 
 .contact__icon {
-    width: 200px;
-    right: 129px;
-    top: 36px;
+    width: 16%;
+    background-size: cover;
+    right: 12.9rem;
+    background-repeat: no-repeat;
+    top: 2.6rem;
     position: absolute;
-
+    background-image: url(../img/contact.png);
+    height: 47%;
 }
 
 .circle--right-top {
-    bottom: 168px;
-    right: 133px;
+    bottom: 21.8rem;
+    right: 17.3rem;
+    background-image: url(../img/bg-circle-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 34%;
+    width: 13%;
 }
 
 .circle--right-bottom {
-    bottom: -43px;
-    right: 2px;
+    bottom: 0.3rem;
+    right: 4.2rem;
+    background-image: url(../img/bg-circle-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 34%;
+    width: 13%;
 }
 
 .contact__icon--responsive {
@@ -134,10 +178,12 @@ body {
     .contact__icon--responsive {
         display: block;
         position: absolute;
-        width: 140px;
+        width: 14rem;
         z-index: 0;
-        right: 56px;
-        top: 36px;
+        right: 5.6rem;
+        top: 3.6rem;
+        opacity: 0.8;
+        height: 21%;
     }
     
 }
@@ -162,10 +208,16 @@ body {
     .contact__icon--responsive {
         display: block;
         position: absolute;
-        width: 150px;
+        width: 15rem;
         z-index: 0;
-        top: 36px;
-        right: 7px;
+        top: 3.6rem;
+        right: 0.7rem;
+        opacity: 0.8;
+        height: 16%;
+    }
+
+    .form__submit {
+        width: 27%;
     }
 }
 
@@ -173,33 +225,45 @@ body {
 
 .footer {
     background-color: #2C2D3F;
+    color: #fff;
 }
 
 .footer__container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .footer__text {
-    color: #fff;
-    margin-bottom: 0px;
+    /* color: #fff; */
+    margin-bottom: 0;
+    font-size: 1.6rem;
 }
+
+.footer__text::selection {
+    background: #15C78C;
+}
+
+.footer__text::-moz-selection { 
+    background: #2C2D3F;
+    color: #fff;
+}
+
 
 .footer__social-media {
-    color: #15C78C;
-    font-size: 25px;
+    font-size: 2.5rem;
+
 }
 
-.footer__social-media > a {
+.social-media__link {
     text-decoration: none;
-    color: #15C78C;
-    margin: 0px 3px;
+    color: #fff;
+    margin: 0 0.3rem;
 }
 
-.footer__social-media > a:hover {
-    color: #15a777;
+.social-media__link:hover {
+    color: #00ffb0;
 }
 
 @media (max-width: 768px){
