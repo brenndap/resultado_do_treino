@@ -15,19 +15,73 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <title>Resultado do treino</title>
     <link rel="icon" href="./img/component.png" type="image" sizes="16x14">
+
 </head>
 
 <body>
-    <header>
-        <nav></nav>
+    <!--NAV + BANNER-->
+
+    <header id="top">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#"><img class="logo" src="./img/component.png"
+                    alt="logotipo do site: um R e um T maiúsculos"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-md-auto list nav__hover">
+                    <li class="nav-item">
+                        <a href="#about">Para quem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#function">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#app">Aplicativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#packages">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section class="banner title__style">
+            <div class="circles__position"></div>
+
+            <div class="banner-title">
+
+                <p class="banner-title__principal"><span class="banner-title__checked">Aumente</span> seu
+                    faturamento</br>e<span class="banner-title__checked"> fidelize</span> seu aluno</p>
+
+            </div>
+        </section>
 
     </header>
+
+
+    <!--NEWSLETTER-->
+
     <main>
+        <section class="newsletter">
+            <h3 class="newsletter__title">Receba todas as novidades por e-mail</h3>
+            <input class="newsletter__email" type="email" placeholder="Digite seu e-mail"><button
+                class="newsletter__button">Inscreva-se</button>
+        </section>
+
         <section></section>
         <section></section>
         <section class="app"></section>
 
-        
+
         <!-- packages start -->
 
         <section class="packages" id="packages">
@@ -38,8 +92,9 @@
             <div class="packages__box">
                 <div class="packages__deal">
                     <h3>Prata</h3>
-                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo benefícios únicos para cada um</p>
-                    
+                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                        benefícios únicos para cada um</p>
+
                     <div class="packages__footer">
                         <button class="btn">Comprar</button>
                     </div>
@@ -48,33 +103,35 @@
 
                 <div class="packages__deal">
                     <h3>Ouro</h3>
-                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo benefícios únicos para cada um</p>
+                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                        benefícios únicos para cada um</p>
                     <div class="packages__footer">
-                            <button class="btn">Comprar</button>
+                        <button class="btn">Comprar</button>
                     </div>
                 </div>
 
                 <div class="packages__deal">
                     <h3>Diamante</h3>
-                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo benefícios únicos para cada um</p>
+                    <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                        benefícios únicos para cada um</p>
                     <div class="packages__footer">
                         <button class="btn">Comprar</button>
                     </div>
                 </div>
-            
+
                 <div class="packages__bg">
                     <div class="packages__bg--circles"></div>
                     <div class="packages__bg--number4"></div>
                 </div>
 
-                
+
 
             </div>
         </section>
 
         <!-- packages end -->
 
-        <section></section> 
+        <section></section>
 
 
         <section class="contact" id="contact">
@@ -129,14 +186,30 @@
         <div class="container footer__container">
             <p class="footer__text">Resultado do treino - Todos direitos reservados</p>
             <div class="footer__social-media">
-                <a class="social-media__link" href="https://www.facebook.com/n2bbrasil/"><i class="fab fa-facebook-square"></i></a>
-                <a class="social-media__link" href="https://www.instagram.com/n2bbrasil/"><i class="fab fa-instagram"></i></a>
-                <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i class="fab fa-linkedin"></i></a>
+                <a class="social-media__link" href="https://www.facebook.com/n2bbrasil/"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a class="social-media__link" href="https://www.instagram.com/n2bbrasil/"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i
+                        class="fab fa-linkedin"></i></a>
 
             </div>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+
+
 </body>
 
 </html>
