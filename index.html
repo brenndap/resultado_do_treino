@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/CSSReset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <title>Resultado do treino</title>
     <link rel="icon" href="./img/component.png" type="image" sizes="16x14">
 </head>
+
 <body>
     <header>
         <nav></nav>
-        
+
     </header>
     <main>
-
         <section></section>
         <section></section>
         <section class="app"></section>
+
         
         <!-- packages start -->
 
@@ -68,8 +76,67 @@
 
         <section></section> 
 
+
+        <section class="contact" id="contact">
+            <div class="container contact__container">
+                <div class="circle circle--left"></div>
+                <form action="" class="contact__form">
+                    <div class="contact__icon contact__icon--responsive"></div>
+                    <div class="form__title">
+                        <hr class="title__line title__line--dark">
+                        <h2 class="title">Contato</h2>
+                    </div>
+                    <div class="form-row">
+                        <div class="form__field col">
+                            <label class="field__label">Nome</label>
+                            <input class="field__input" type="text" required>
+                        </div>
+                        <div class="form__field col">
+                            <label class="field__label">Sobrenome</label>
+                            <input class="field__input" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form__field col">
+                            <label class="field__label">E-mail</label>
+                            <input class="field__input" type="email" required>
+                        </div>
+                        <div class="form__field col">
+                            <label class="field__label">Telefone</label>
+                            <input class="field__input" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form__field col">
+                            <label class="field__label">Mensagem</label>
+                            <textarea class="field__input" cols="20" rows="7" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form__field col">
+                            <input class="form__submit" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+                <div class="contact__icon"></div>
+                <div class="circle circle--right-top"></div>
+                <div class="circle circle--right-bottom"></div>
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">Resultado do treino - Todos direitos reservados</p>
+            <div class="footer__social-media">
+                <a class="social-media__link" href="https://www.facebook.com/n2bbrasil/"><i class="fab fa-facebook-square"></i></a>
+                <a class="social-media__link" href="https://www.instagram.com/n2bbrasil/"><i class="fab fa-instagram"></i></a>
+                <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
