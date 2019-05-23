@@ -12,18 +12,21 @@ let slideRevenues = document.querySelector (".slide__revenue")
 
 btnBook.addEventListener ('click', function(){
 
-    // slideBook.classList.toggle("active");
+    slideBook.classList.toggle("active");
     // slideBook.animate ([
     //     {transform: "translateY(0px)"},
     //     {transform: "translateY(300px)"}
 
     // ], 
     // {duration: 1000, width: 60%})
+
     
     if (slideBook.style.display === "none") {
         slideBook.style.display = "block";
+        btnBook.innerHTML = "-"
       } else {
         slideBook.style.display = "none"
+        btnBook.innerHTML = "+"
       }
 
 });
