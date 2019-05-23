@@ -14,24 +14,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* CONTACT SECTION */
-.contact {
-    background: rgb(0, 255, 176);
-    padding: 3rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact__container {
-    width: 80rem;
-    
-}
-.contact__form {
-    padding-left: 2rem;
-    font-size: 1.6rem;
-    
-}
-
 .title {
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -56,6 +38,26 @@ body {
 .title__line--dark {
     border-color: rgb(44, 45, 63);
 }
+
+/* CONTACT SECTION */
+.contact {
+    background: rgb(0, 255, 176);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__container {
+    width: 80rem;
+    
+}
+.contact__form {
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    
+}
+
+
 
 .form__field {
     display: flex;
