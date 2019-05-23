@@ -41,7 +41,7 @@ body {
 .banner {
     background-image: url("../img/banner-bg.png");
     background-size: cover;
-    height: 80vh;
+    height: 71vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -57,13 +57,10 @@ body {
     text-transform: uppercase;
     font-size: 1.875rem;
     color: #FFFFFF;
-    width: 50vw;
     text-align: center;
 }
 
 .title-style {
-    /* padding-bottom: 1.375rem; */
-    /* padding-left: 36.375rem; */
     font-weight: 700;
 }
 
@@ -124,25 +121,30 @@ body {
     background-color:rgb(75, 75, 85);
 }
 
-@media(max-width: 960px) {
-    .bannerTitle__white {
-        width: 100vw;
-        text-align: center;
-    }
+/*Adaptação para tablets e celulares*/
 
+@media(max-width: 720px) {
     .logo {
         width: 20vw;
     }
-}
 
-@media(max-width: 520px) {
-    .logo {
-        width: 25vw;
+    .banner {
+        height: 60vw;
     }
 
-    .bannerTitle__white {
-        max-width: 90vw;
-        text-align: center;
+    .bannerTitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .bannerTitle__white, .bannerTitle__green {
+        font-size: 1.375rem;
+    }
+
+    .newsletter-title {
+        font-size: 1.125rem;
+    }
+
+    .newsletter-button, .newsletter-email {
+        font-size: 0.875rem;
     }
 }
-
