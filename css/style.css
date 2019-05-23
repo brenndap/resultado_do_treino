@@ -1,14 +1,14 @@
 * {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    
-
 }
 
 html {
     font-size: 62.5%;
+
 }
 
 body {
@@ -197,6 +197,95 @@ h3 {
         border-radius: 3.125rem;
     }
 }
+
+/* APLICATIVO */
+
+
+
+h2 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+
+.app {
+    background-color: rgb(44, 45, 63);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.app__bg-3 {
+    background-image: url("../img/3.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+
+.app__bg-circle-3 {
+    background-image: url("../img/bg-circle.png");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 17rem;
+    right: 2rem;
+}
+
+.app__phone > img {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: -900px;
+    
+}
+
+.app__item {
+    display: flex;
+}
+
+.item__about {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.item__about > img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.item__about-text{
+    color: rgb(255, 255, 255);    
+    text-align: center;
+    
+}
+
+
+@media (max-width: 767px) {    
+    .title__h2 {
+        text-align: center;
+    }
+    
+    .title__line {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    
+    .app__phone > img, .app__bg-circle-3, .app__bg-3 {
+        display: none;  
+                    
+    }  
+} 
+    
 
 /* packages */
 
