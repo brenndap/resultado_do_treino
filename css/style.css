@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Aplicativo */
+
+.title__h2 {
+    padding-left: 1.25rem;
+    margin: 3.125rem 0;
+}
+
+.title__line {
+    width: 5rem;
+    border: solid 2px #15c78c;
+    margin-bottom: 0.625rem;
+}
+
+h2 {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.125rem;
+}
+
+
+.app {
+    background-color: #2C2D3F;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.app__bg-3 {
+    background-image: url("../img/3.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 3.125rem;
+    right: 5rem;
+}
+
+.app__bg-circle-3 {
+    background-image: url("../img/bg-circle.png");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 10.625rem;
+    right: 1.25rem;
+}
+
+.app__phone > img {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: -850px;
+    
+}
+
+.app__item {
+    display: flex;
+}
+
+.item__about {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.item__about > img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.item__about-text{
+    color: #fff;    
+    text-align: center;
+    
+}
+
+
+@media (max-width: 767px) {
+    
+.title__h2 {
+    text-align: center;
+ }
+ 
+ .title__line {
+     margin: 0 auto;
+     margin-bottom: 1.25rem;
+ }
+ 
+.app__phone > img, .app__bg-circle-3, .app__bg-3 {
+    display: none;  
+                
+}  
+
+} 
+    
