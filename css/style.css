@@ -15,7 +15,6 @@ body {
 }
 
 /* CONTACT SECTION */
-
 .contact {
     background: rgb(0, 255, 176);
     padding: 3rem 0;
@@ -54,7 +53,7 @@ body {
     margin: 1rem 0;
 }
 
-.title__line {
+.title__line--dark {
     border-color: rgb(44, 45, 63);
 }
 
