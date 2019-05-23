@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     
+
 }
 
 html {
@@ -42,6 +43,159 @@ h3 {
 
 .title__line--dark {
     border-color: rgb(44, 45, 63);
+}
+
+/*NAV + BANNER*/
+
+.logo {
+    width: 14vw;
+}
+
+.list {
+    text-transform: uppercase;
+}
+.nav__hover li {
+    font-size: 1.5rem;
+}
+.nav__hover a {
+    color: #2C2D3F; 
+    font-weight: 700;
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    
+}
+
+.nav__hover a:active, .nav__hover a:link, .nav__hover a:visited {
+    text-decoration: none;
+}
+
+.nav__hover a:hover {
+    color: #01FDAF;
+}
+
+.banner {
+    background-image: url("../img/banner-bg.png");
+    background-size: cover;
+    height: 71vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center 10%;
+}
+
+.title__style {
+    font-weight: 700;
+}
+
+.circles__position {
+    background-image: url("../img/bg-circle.png");
+    opacity: 0.3;
+    width: 60%;
+    background-repeat: no-repeat;
+    height: 58vh;
+    
+}
+
+.banner-title {
+    position: relative;
+    bottom: 0.8vh;
+    right: 10vw;
+    text-align: right;
+}
+
+.banner-title__principal {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.banner-title__checked {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color:#01FDAF;
+}
+
+/*NEWSLETTER*/
+
+.newsletter {
+    text-align: center;
+    background-color:#15c78c;
+    color: #FFFFFF;
+    padding: 3.2rem;
+}
+
+.newsletter__title {
+    padding: 1.92rem;
+    font-size: 2.5rem;
+}
+
+.newsletter__email {
+    border-radius: 3.125rem 0 0 3.125rem;
+    border: none;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    width: 40%;
+}
+
+.newsletter__email:focus {
+    outline: none;
+}
+
+.newsletter__button {
+    border: none;
+    border-radius: 0 3.125rem 3.125rem 0;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    background-color:#2C2D3F;
+    color:#15c78c;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter__button:hover {
+    color: #01FDAF;
+    background-color:rgb(75, 75, 85);
+}
+
+/*Adaptação para tablets e celulares*/
+
+@media(max-width: 720px) {
+    .logo {
+        width: 20vw;
+    }
+
+    .banner-title {
+        margin-left: 70px;
+    }
+
+    .banner-title__principal {
+        text-align: center;
+    }
+
+    .circles__position {
+        display: none;
+    }
+}
+
+@media(max-width: 265px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter__email {
+        border-radius: 3.125rem;
+        width: 200px;
+        padding: 1.2rem;
+    }
+
+    .newsletter__button {
+        margin-top: 1rem;
+        border-radius: 3.125rem;
+    }
 }
 
 /* packages */
@@ -392,5 +546,8 @@ h3 {
 @media (max-width: 768px){
     .footer__container {
         flex-direction: column;
+
+       
     }
 }
+
