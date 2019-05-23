@@ -1,7 +1,12 @@
-* { margin: 0;
+* { 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -10,34 +15,34 @@ body {
 
 h2 {
     font-weight: 700;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 h2::selection {
-    background-color: #15C78C;
+    background-color: rgb(21, 199, 140);
 }
 
 p::selection {
-    background-color: #15C78C;
+    background-color: rgb(21, 199, 140);
 }
 
 
 /* PARA QUEM */
 
 .about {
-    background-color: #2C2D3F;
-    color: #ffffff;
+    background-color: rgb(44, 45, 63);
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     text-align: left;
-    padding: 20px;
+    padding: 2rem;
     display: flex;
     padding-bottom: 10vh;
 }
 
 .about__subtitle--green {
-    color:#15C78C;
+    color: rgb(21, 199, 140);
     font-weight: bold;
 }
 
@@ -55,9 +60,9 @@ p::selection {
 }
 
 .title__line {
-    width: 100px;
-    border: solid 2px #15C78C;
-    margin: 18px 6px;
+    width: 10rem;
+    border: solid 2px rgb(21, 199, 140);
+    margin: 1.8rem 0.6rem;
 }
 
 .about__content {
@@ -124,9 +129,9 @@ p::selection {
 /* COMO FUNCIONA */
 
 .function {
-    background-color: #373849;
+    background-color: rgb(55, 56, 73);
     position: relative;
-    padding: 20px;
+    padding: 2rem;
     display: flex;
     padding-bottom: 18vh;
 }
@@ -145,16 +150,34 @@ p::selection {
 
 .function__content {
     position: relative;
-    width: 50%;
+    width: 22vw;
 }
 
 .function__content--img {
-    border-radius: 20px;
+    border-radius: 2rem;
     z-index: 1;
     display: block;
-    width: 90%;
+    width: 20vw;
     height: auto;
     margin: 0 auto;
+}
+
+.function__button {
+    cursor: pointer;
+    display: block;
+    color: #2C2D3F;
+    background-color: #15C78C;
+    border: none;
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.function__button:hover {
+    cursor: pointer;
+    color: #15C78C;
+    background-color: #2C2D3F;
 }
 
 .slide {
@@ -164,30 +187,54 @@ p::selection {
     position: absolute;
     transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     left: 50%;
     top: 0;
     opacity: 0;
-    border-radius: 20px;
+    border-radius: 2rem;
     transition: 0.5s ease;
+}
+
+.slide__text {
+    display: none;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    padding: 2rem;
+    transition: 3s;
 }
 
 .slide p {
     color: white;
-    font-size: 1.25rem;
+    font-size: 2rem;
+    margin: 3%;
+}
+
+/* .slide__book.active {
+    display: block;
+} */
+
+.active {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 
 .function__content:hover .slide {
     opacity: 1;
     transition: 0.5s ease;
-}
-
-.slide__text {
-    display: flex;
-    position: relative;
-    height: 10vh;
-    color: white;
 }
 
 .function__bg {
@@ -219,16 +266,30 @@ p::selection {
     .function__container {
         width: 80%;
     }
+    
+    .function__content-container {
+        min-height: 40vh;
+    }
+
     .function__content {
         width: 100%;
     }
+
     .function__img {
         display: flex;
-        height: 100vh;
+        min-height: 100%;
         text-align: center;
         align-items: center;
-        justify-content: space-around;
         flex-direction: column;
+    }
+
+    .slide {
+        background-color: rgba(44, 45, 63, 0.623);
+        width: 60vw;
+    }
+
+    .function__content--img {
+        width: 60vw;
     }
     
     .function__bg {
@@ -239,6 +300,10 @@ p::selection {
 @media (max-width: 420px) {
     .function__img {
         height: 67vh;
+    }
+    .slide {
+        background-color: rgba(44, 45, 63, 0.623);
+        width: 60vw;
     }
 }
 

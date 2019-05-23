@@ -1,21 +1,49 @@
-let slideBook = document.querySelector (".slideBook")
-let slideTry = document.querySelector (".slideTry");
-let slideRevenues = document.querySelector ("#slideRevenues")
+let btnBook = document.querySelector(".btn--book");
+let btnTry = document.querySelector(".btn--try");
+let btnRevenue = document.querySelector(".btn--revenue");
 
-slideBook.addEventListener ('click', function(){
-    book.classList.toggle("slide__book");
+let slideBook = document.querySelector (".slide__book")
+let slideTry = document.querySelector (".slide__try");
+let slideRevenues = document.querySelector (".slide__revenue")
+
+
+
+
+
+btnBook.addEventListener ('click', function(){
+
+    // slideBook.classList.toggle("active");
+    // slideBook.animate ([
+    //     {transform: "translateY(0px)"},
+    //     {transform: "translateY(300px)"}
+
+    // ], 
+    // {duration: 1000, width: 60%})
+    
+    if (slideBook.style.display === "none") {
+        slideBook.style.display = "block";
+      } else {
+        slideBook.style.display = "none"
+      }
+
 });
 
-slideTry.addEventListener ('click', function(){
+btnTry.addEventListener ('click', function(){
     
-    let test = document.createElement("div");
-    test.innerHTML = "CLICK ME";
-    test.classList.toggle("slice__try");
-    slideTry.append(test); 
+    if (slideTry.style.display === "none") {
+        slideTry.style.display = "block";
+      } else {
+        slideTry.style.display = "none"
+      }
+
 });
 
-slideRevenues.addEventListener ('click', function(){
+btnRevenue.addEventListener ('click', function(){
     
-    revenue.classList.toggle("slide__revenue");
+    if (slideRevenues.style.display === "none") {
+        slideRevenues.style.display = "block";
+      } else {
+        slideRevenues.style.display = "none"
+      }
     
 });
