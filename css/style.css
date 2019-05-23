@@ -50,7 +50,7 @@ body {
 
 .title__line {
     width: 10rem;
-    border: solid 2px rgb(21, 199, 140);
+    border: solid 0.2rem rgb(21, 199, 140);
     margin: 1rem 0;
 }
 
@@ -95,7 +95,7 @@ body {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border-radius: 1rem;
-    border: solid 2px rgb(0, 0, 0);
+    border: solid 0.2rem rgb(0, 0, 0);
     padding: 1rem;
     transition-duration: 0.4s;
 }
