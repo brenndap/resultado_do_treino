@@ -121,7 +121,6 @@ h3 {
     .packages__box {
         flex-direction: row;
         background-image: url("../img/bg-circle.png");
-        opacity: 0.8;
         background-repeat: repeat-y;
         margin-top: 0.5rem;
     }
