@@ -4,7 +4,6 @@
     box-sizing: border-box;
     outline: none;
     
-
 }
 
 html {
@@ -15,18 +14,34 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.title {
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
 
+.title {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 5rem;
-
 }
 
-h3 {
-    font-size: 3rem;
-    font-weight: 700;
+.title::-moz-selection {
+    background: rgb(44, 45, 63);
+}
+  
+.title::selection {
+    background: rgb(44, 45, 63);
+}
+
+.title__line {
+    width: 10rem;
+    border: solid 0.2rem rgb(21, 199, 140);
+    margin: 1rem 0;
+}
+
+.title__line--dark {
+    border-color: rgb(44, 45, 63);
 }
 
 /* packages */
@@ -103,7 +118,7 @@ h3 {
 
 /* responsive */
 
-@media (max-width: 1170px) {
+@media (max-width: 1140px) {
     .packages {
         width: 100%;
     }
@@ -122,9 +137,9 @@ h3 {
         background-repeat: repeat-y;
         margin-top: 0.5rem;
     }
-}
+} 
 
-@media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     .packages {
         width: 100%;
     }
@@ -146,27 +161,11 @@ h3 {
     .packages__deal {
         width: 80%;
 
-}
+} */
 
-.title::-moz-selection {
-    background: rgb(44, 45, 63);
-}
-  
-.title::selection {
-    background: rgb(44, 45, 63);
-}
-
-.title__line {
-    width: 10rem;
-    border: solid 0.2rem rgb(21, 199, 140);
-    margin: 1rem 0;
-}
-
-.title__line--dark {
-    border-color: rgb(44, 45, 63);
-}
 
 /* CONTACT SECTION */
+
 .contact {
     background: rgb(0, 255, 176);
     padding: 3rem 0;
@@ -216,7 +215,7 @@ h3 {
 }
 
 .form__submit {
-    width: 20rem;
+    width: 25%;
     margin: 0 auto;
     text-transform: uppercase;
     font-weight: 700;
@@ -393,6 +392,5 @@ h3 {
 @media (max-width: 768px){
     .footer__container {
         flex-direction: column;
-
     }
 }
