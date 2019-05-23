@@ -17,20 +17,20 @@ body {
 
 .title__line {
     width: 5rem;
-    border: solid 2px #15c78c;
+    border: solid 2px rgb(20, 198, 139);
     margin-bottom: 1rem;
 }
 
 h2 {
     font-weight: 700;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 5rem;
 }
 
 
 .app {
-    background-color: #2C2D3F;
+    background-color: rgb(44, 45, 63);
     overflow: hidden;
     position: relative;
     
@@ -83,7 +83,7 @@ h2 {
 }
 
 .item__about-text{
-    color: #fff;    
+    color: rgb(255, 255, 255);    
     text-align: center;
     
 }
