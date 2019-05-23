@@ -23,12 +23,14 @@ body {
 .list {
     text-transform: uppercase;
 }
-
+.nav__hover li {
+    font-size: 1.5rem;
+}
 .nav__hover a {
     color: #2C2D3F; 
     font-weight: 700;
     display: block;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     
 }
@@ -68,13 +70,13 @@ body {
     position: relative;
     bottom: 0.8vh;
     right: 10vw;
+    text-align: right;
 }
 
 .banner-title__principal {
     text-transform: uppercase;
     font-size: 3rem;
     color: #FFFFFF;
-    text-align: center;
 }
 
 .banner-title__checked {
@@ -94,12 +96,14 @@ body {
 
 .newsletter__title {
     padding: 1.92rem;
+    font-size: 2.5rem;
 }
 
 .newsletter__email {
     border-radius: 3.125rem 0 0 3.125rem;
     border: none;
-    padding: 0.8rem;
+    padding: 1.6rem;
+    font-size: 1.4rem;
     width: 40%;
 }
 
@@ -110,7 +114,8 @@ body {
 .newsletter__button {
     border: none;
     border-radius: 0 3.125rem 3.125rem 0;
-    padding: 1.28rem;
+    padding: 1.6rem;
+    font-size: 1.4rem;
     background-color:#2C2D3F;
     color:#15c78c;
     font-weight: 700;
@@ -130,24 +135,12 @@ body {
         width: 20vw;
     }
 
-    .banner {
-        height: 60vw;
-    }
-
     .banner-title {
-        margin-bottom: 2.4rem;
+        margin-left: 70px;
     }
 
-    .banner-title__principal, .banner-title__checked {
-        font-size: 2.2rem;
-    } 
-
-    .newsletter__title {
-        font-size: 1.8rem;
-    }
-
-    .newsletter__button, .newsletter__email {
-        font-size: 1.4rem;
+    .banner-title__principal {
+        text-align: center;
     }
 
     .circles__position {
@@ -155,17 +148,21 @@ body {
     }
 }
 
-@media(max-width: 440px) {
-    .banner-title {
-        position: relative;
-        bottom: 0.8vh;
-        right: 1vw;
+@media(max-width: 265px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media(max-width: 345px) {
-    .banner-title {
-        margin-bottom: 0;
-        max-width: 95vw;
+    .newsletter__email {
+        border-radius: 3.125rem;
+        width: 200px;
+        padding: 1.2rem;
+    }
+
+    .newsletter__button {
+        margin-top: 1rem;
+        border-radius: 3.125rem;
     }
 }
