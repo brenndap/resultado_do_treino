@@ -13,12 +13,12 @@ body {
 }
 
 .title__line {
-    width: 18rem;
+    width: 5rem;
     border: solid 0.2rem rgb(21, 199, 140);
     margin: 0rem 0.6rem;
     }
 
-.title {
+h2 {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
