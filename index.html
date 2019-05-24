@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+    <meta name="author" content="Andrezza Almeida, Brennda Farinha, Carina Di Domenico, Marília Cavalcante, Roberta Cintra">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/CSSReset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Resultado do treino</title>
+    <link rel="icon" href="./img/component.png" type="image" sizes="16x14">
+
 </head>
+
 <body>
-    <header>
-        <nav></nav>
-        
+    <!--NAV + BANNER-->
+
+    <header id="top">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img class="logo" src="./img/component.png"
+                    alt="logotipo do site: um R e um T maiúsculos"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-md-auto list nav__hover">
+                    <li class="nav-item">
+                        <a href="#about">Para quem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#function">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#app">Aplicativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#packages">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="banner title__style">
+            <div class="circles__position"></div>
+
+            <div class="container banner__responsivo">
+
+                <p class="banner-title__principal"><span class="banner-title__checked">Aumente</span> seu
+                    faturamento e<span class="banner-title__checked"> fidelize</span> seu aluno</p>
+
+            </div>
+        </section>
+
     </header>
+
+
+    <!--NEWSLETTER-->
+
     <main>
         
         <!-- INÍCIO PARA QUEM -->
@@ -97,12 +151,206 @@
         <!-- FINAL COMO FUNCIONA -->
         
         
+
+        <section class="newsletter">
+            <h3 class="newsletter__title">Receba todas as novidades por e-mail</h3>
+            <input class="newsletter__email" type="email" placeholder="Digite seu e-mail"><button
+                class="newsletter__button">Inscreva-se</button>
+        </section>
+
         <section></section>
         <section></section>
-        <section></section> 
+
+        <section class="app" id="app">
+            <div class="container">
+                <div class="title__h2">
+                    <hr class="title__line">
+                    <h2>Aplicativo</h2>
+                </div>
+
+                <div class="row">
+                    <div class="app__phone col- col-md-5">
+                        <img src="img/smatphone.png"
+                            alt="Imagem de um smartphone mostrando a tela do aplicativo do Formula do Treino">
+                    </div>
+                    <div class="app__item col- col-md-7">
+                        <div>
+                            <div class="item__about">
+                                <img src="img/workout.png" alt="icone de halteres">
+                                <p class="item__about-text">Acompanhamento da evolução dos treinos</p>
+                            </div>
+                            <div class="item__about">
+                                <img src="img/meal.png" alt="icone de talheres">
+                                <p class="item__about-text">Diário com as refeições avaliadas</p>
+                            </div>
+                            <div class="item__about">
+                                <img src="img/chat.png" alt="icone com balão de chat">
+                                <p class="item__about-text">Chat com nutricionista para dúvidas</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="item__about">
+                                <img src="img/diet.png" alt="icone de cardápio">
+                                <p class="item__about-text">Cardápios personalizados</p>
+                            </div>
+                            <div class="item__about">
+                                <img src="img/scanner.png" alt="icone de código de barras">
+                                <p class="item__about-text">Scanner de alimentos</p>
+                            </div>
+                            <div class="item__about">
+                                <img src="img/news.png" alt="icone de novidades">
+                                <p class="item__about-text">Novidades em breve</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="app__bg-3"></div>
+            <div class="app__bg-circle-3"></div>
+        </section>
+
+
+        <!-- packages start -->
+
+        <section class="packages" id="packages">
+            <div class="container">
+                <div class="title__head">
+                    <hr class="title__line">
+                    <h2 class="title">Pacotes</h2>
+                </div>
+                <div class="packages__bg">
+                    <div class="packages__bg--circles"></div>
+                    <div class="packages__bg--number4"></div>
+                </div>
+                <div class="packages__box">
+                    <div class="packages__deal">
+                        <h3>Prata</h3>
+                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                            benefícios únicos para cada um</p>
+
+                        <div class="packages__footer">
+                            <button class="packages__btn">Comprar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="packages__deal">
+                        <h3>Ouro</h3>
+                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                            benefícios únicos para cada um</p>
+                        <div class="packages__footer">
+                            <button class="packages__btn">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="packages__deal">
+                        <h3>Diamante</h3>
+                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
+                            benefícios únicos para cada um</p>
+                        <div class="packages__footer">
+                            <button class="packages__btn">Comprar</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- packages end -->
+
+
+        <section class="contact" id="contact">
+            <div class="container">
+                
+                <div class="form__title">
+                    <hr class="title__line--dark">
+                    <h2>Contato</h2>
+                </div>
+                
+                <div class="contact__container">
+
+                    <div class="circle circle--left"></div>
+                    <form action="" class="contact__form">
+
+                        <div class="form-row">
+                            <div class="form__field col">
+                                <label class="field__label">Nome</label>
+                                <input class="field__input" type="text" required>
+                            </div>
+                            <div class="form__field col">
+                                <label class="field__label">Sobrenome</label>
+                                <input class="field__input" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form__field col">
+                                <label class="field__label">E-mail</label>
+                                <input class="field__input" type="email" required>
+                            </div>
+                            <div class="form__field col">
+                                <label class="field__label">Telefone</label>
+                                <input class="field__input" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form__field col">
+                                <label class="field__label">Mensagem</label>
+                                <textarea class="field__input" cols="20" rows="7" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form__field col">
+                                <input class="form__submit" type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="contact__icon"></div>
+                    <div class="circle circle--right-top"></div>
+                    <div class="circle circle--right-bottom"></div>
+                </div>
+            </div>
+
+        </section>
+
         
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">Resultado do treino - Todos direitos reservados</p>
+            <div class="footer__social-media">
+                <a class="social-media__link" href="https://www.facebook.com/n2bbrasil/"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a class="social-media__link" href="https://www.instagram.com/n2bbrasil/"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i
+                        class="fab fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+
+
+
 </body>
+
 </html>
