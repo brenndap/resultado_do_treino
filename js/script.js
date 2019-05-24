@@ -39,7 +39,7 @@ btnRevenue.addEventListener ('click', function(){
     
   } else {
     slideRevenues.style.maxHeight = slideRevenues.scrollHeight + "px";
-    btnBook.innerHTML = "-";
+    btnRevenue.innerHTML = "-";
 
   } 
 });
