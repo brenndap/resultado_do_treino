@@ -42,13 +42,16 @@ h3 {
 }
 
 .title__line--dark {
-    border-color: rgb(44, 45, 63);
+    width: 10rem;
+    margin: 1rem 0;
+    border:solid 0.2rem rgb(44, 45, 63);
 }
 
 /*NAV + BANNER*/
 
 .logo {
-    width: 14vw;
+    width: 100%;
+    max-width: 200px;
 }
 
 .list {
@@ -80,7 +83,7 @@ h3 {
     height: 71vh;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
     background-position: center 10%;
 }
 
@@ -89,32 +92,48 @@ h3 {
 }
 
 .circles__position {
-    background-image: url("../img/bg-circle.png");
-    opacity: 0.3;
-    width: 60%;
+    background-image: url(../img/bg-circle.png);
+    opacity: 0.8;
+    width: 200px;
     background-repeat: no-repeat;
-    height: 58vh;
+    height: 337px;
+    position: absolute;
+    left: 230px;
+    bottom: 378px;
+    background-size: cover;
     
 }
 
-.banner-title {
-    position: relative;
-    bottom: 0.8vh;
-    right: 10vw;
-    text-align: right;
+
+.banner-title__principal::selection, .banner-title__checked::selection  {
+    background: rgb(21, 199, 140);
+    opacity: 0.7;
+}
+
+.banner-title::-moz-selection, .banner-title__checked::-moz-selection { 
+    background: rgb(44, 45, 63);
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
 }
 
 .banner-title__principal {
     text-transform: uppercase;
     font-size: 3rem;
     color: #FFFFFF;
+    text-align: right;
+    width: 50%;
+    float: right;
 }
+
 
 .banner-title__checked {
     text-transform: uppercase;
     font-size: 3rem;
     color:#01FDAF;
 }
+
+
+
 
 /*NEWSLETTER*/
 
@@ -126,7 +145,7 @@ h3 {
 }
 
 .newsletter__title {
-    padding: 1.92rem;
+    padding-bottom: 1.92rem;
     font-size: 2.5rem;
 }
 
@@ -198,6 +217,19 @@ h3 {
     }
 }
 
+
+@media (max-width: 420px){
+    .banner__responsivo {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-title__principal {
+        text-align: center;
+        clear: both;
+        width: 100%;
+    }
+}
+
 /* APLICATIVO */
 
 
@@ -209,11 +241,19 @@ h2 {
     font-size: 5rem;
 }
 
+.title__line-app {
+    margin-bottom: 1rem;
+    width: 10rem;
+    border: solid 0.2rem rgb(21, 199, 140);
+    margin: 1rem 0;
+}
+
 
 .app {
     background-color: rgb(44, 45, 63);
     overflow: hidden;
     position: relative;
+    padding-top: 5rem;
     
 }
 
@@ -266,6 +306,8 @@ h2 {
 .item__about-text{
     color: rgb(255, 255, 255);    
     text-align: center;
+    font-size: 1.8rem;
+    width: 80%;
     
 }
 
@@ -275,16 +317,20 @@ h2 {
         text-align: center;
     }
     
-    .title__line {
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-    
+        
     .app__phone > img, .app__bg-circle-3, .app__bg-3 {
         display: none;  
                     
     }  
 } 
+
+@media (max-width: 420){
+    .title__line {
+        text-align: center;
+    }
+}
+
+
     
 
 /* packages */
@@ -292,7 +338,10 @@ h2 {
 .packages {
     background-color: rgb(44, 45, 63);
     padding: 2rem;
+    position: relative;
+    padding-top: 5rem;
 }
+
 
 .packages__box {
     display: flex;
@@ -304,7 +353,6 @@ h2 {
     background-color: rgb(25, 203, 148);
     border-radius: 1rem;
     color: rgb(44, 45, 63);
-    text-transform: uppercase;
     text-align: center;
     padding: 3rem;
     margin: 3rem;
@@ -316,15 +364,14 @@ h2 {
 
 .packages__text {
     margin-top: 7rem;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 2rem;
     min-height: 20rem;
     min-width: 20rem;
 }
 
 /* button */
 
-.btn {
+.packages__btn {
     text-transform: uppercase;
     background-color: rgb(44, 45, 63);
     color: rgb(255, 255, 255);
@@ -334,19 +381,26 @@ h2 {
     padding: 1rem 3rem;
     border-radius: 1.5rem;
     cursor: pointer;
+    font-size: 2rem;
 }
 
-.btn:hover {
+.packages__btn:hover {
     background-color: rgb(255, 255, 255);
     color:  rgb(90, 93, 124);
+}
+
+.packages__bg {
+    position: absolute;
+    left: 13rem;
+    top: 17rem;
 }
 
 .packages__bg--circles {
     background-image: url("../img/bg-circle.png");
     opacity: 0.2;
     background-repeat: no-repeat;
-    height: 30rem;
-    width: 20rem;
+    height: 250px;
+    width: 200px;
     margin-top: -7.5rem;
 }
 
@@ -354,8 +408,8 @@ h2 {
     background-image: url("../img/4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 20rem;
-    width: 20rem;
+    height: 250px ;
+    width: 200px;
     margin-top: -9rem;
 }
 
@@ -382,7 +436,7 @@ h2 {
     }
 } 
 
- /* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .packages {
         width: 100%;
     }
@@ -404,20 +458,20 @@ h2 {
     .packages__deal {
         width: 80%;
 
-} */
-
+    }
+}
 
 /* CONTACT SECTION */
 
 .contact {
     background: rgb(0, 255, 176);
-    padding: 3rem 0;
+    padding: 5rem 0;
     position: relative;
     overflow: hidden;
 }
 
 .contact__container {
-    width: 80rem;
+    margin: 0 auto;
     
 }
 .contact__form {
@@ -477,14 +531,14 @@ h2 {
 
 
 .contact__icon {
-    width: 30rem;
+    width: 246px;
     background-size: cover;
     right: 12.9rem;
     background-repeat: no-repeat;
     top: 2.6rem;
     position: absolute;
     background-image: url(../img/contact.png);
-    height: 30rem;
+    height: 246px;
 }
 
 .circle {
@@ -495,29 +549,31 @@ h2 {
 }
 
 .circle--left {
-    height: 45rem;
     padding-top: 6rem;
     left: 14.5rem;
     background-image: url(../img/bg-circle.png);
-    width: 26rem;
     bottom: 11rem;
+    width: 200px;
+    height: 337px;
+    
     
 }
 
 .circle--right-top {
-    height: 22rem;
-    width: 25rem;
+    height: 180px;
+    width: 200px;
     bottom: 21.8rem;
     right: 17.3rem;
     background-image: url(../img/bg-circle-2.png);
 }
 
 .circle--right-bottom {
-    height: 22rem;
-    width: 25rem;
-    bottom: 0.3rem;
-    right: 4.1rem;
+    height: 180px;
+    width: 200px;
+    bottom: 3.3rem;
+    right: 6.1rem;
     background-image: url(../img/bg-circle-2.png);
+
     
 }
 
@@ -526,16 +582,13 @@ h2 {
 }
 
 @media (max-width: 768px){
-    .contact__container {
-        width: 60rem;
-    }
-
+    
     .circle {
         display: none;
     } 
 
     .form__title {
-        position: relative;
+        text-align: left;
     }
 
     .contact__icon {
@@ -565,7 +618,11 @@ h2 {
     }
 
     .form__title {
-        position: relative;
+        text-align: center;
+    }
+
+    .title__line--dark {
+        margin: 0 auto;
     }
 
     .contact__icon {
@@ -618,7 +675,7 @@ h2 {
 
 
 .footer__social-media {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 
 }
 
