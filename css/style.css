@@ -197,18 +197,18 @@ p::selection {
     top: 0;
     opacity: 0;
     border-radius: 2rem;
-    transition: 1s ease;
 }
 
 .slide__text {
-    display: none;
+    display: block;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 80%;
+    max-height: 0;
     color: white;
-    padding: 2rem;
+    transition: 1s ease-in-out;
 }
 
 .slide p {

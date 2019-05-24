@@ -8,34 +8,38 @@ let slideRevenues = document.querySelector (".slide__revenue");
 
 
 btnBook.addEventListener ('click', function(){
-  if (slideBook.style.display === "block") {
-    slideBook.style.display = "none";
+  
+  if (slideBook.style.maxHeight){
+    slideBook.style.maxHeight = null;
     btnBook.innerHTML = "+";
-
+    
   } else {
-    slideBook.style.display = "block";
+    slideBook.style.maxHeight = slideBook.scrollHeight + "px";
     btnBook.innerHTML = "-";
-  };
+  } 
 });
 
 btnTry.addEventListener ('click', function(){
   
-  if (slideTry.style.display === "block") {
-    slideTry.style.display = "none";
+  if (slideTry.style.maxHeight){
+    slideTry.style.maxHeight = null;
     btnTry.innerHTML = "+";
+    
   } else {
-    slideTry.style.display = "block";
+    slideTry.style.maxHeight = slideTry.scrollHeight + "px";
     btnTry.innerHTML = "-";
-  };
+  } 
 });
 
 btnRevenue.addEventListener ('click', function(){
   
-  if (slideRevenues.style.display === "block") {
-    slideRevenues.style.display = "none";
+  if (slideRevenues.style.maxHeight){
+    slideRevenues.style.maxHeight = null;
     btnRevenue.innerHTML = "+";
+    
   } else {
-    slideRevenues.style.display = "block";
-    btnRevenue.innerHTML = "-";
-  };  
+    slideRevenues.style.maxHeight = slideRevenues.scrollHeight + "px";
+    btnBook.innerHTML = "-";
+
+  } 
 });
