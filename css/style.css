@@ -85,26 +85,28 @@ p::selection {
 }
 
 .about__bg {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 50%;
     position: absolute;
 }
 
 .about__bg--circle {
     background-image: url("../img/bg-circle.png");
-    width: 100%;
-    height: 55%;
+    width: 200px;
+    height: 250px;
+    right: 10%;
+    bottom: 0;
+    align-items: flex-end;
     opacity: 0.31;
     position: absolute;
     background-repeat: no-repeat;
-    background-position: right bottom;
 }
 
 .about__bg--number {
-    width: 95%;
-    height: 50%;
+    width: 200px;
+    height: 250px;
     background-image: url("../img/1.png");
-    background-position: right top;
+    right: 18%;
     background-repeat: no-repeat;
     position: absolute;
 }
@@ -133,7 +135,7 @@ p::selection {
     position: relative;
     padding: 2rem;
     display: flex;
-    padding-bottom: 18vh;
+    padding-bottom: 20vh;
 }
 
 .function__container {
@@ -144,6 +146,7 @@ p::selection {
 
 .function__img {
     display: flex;
+    width: 90%;
     margin-top: 3%;
     text-align: center;
 }
@@ -194,7 +197,6 @@ p::selection {
     top: 0;
     opacity: 0;
     border-radius: 2rem;
-    transition: 0.5s ease;
 }
 
 .slide__text {
@@ -202,12 +204,10 @@ p::selection {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    position: relative;
     margin: 0 auto;
     width: 80%;
     color: white;
     padding: 2rem;
-    transition: 3s;
 }
 
 .slide p {
@@ -216,61 +216,48 @@ p::selection {
     margin: 3%;
 }
 
-/* .slide__book.active {
-    display: block;
-} */
-
-.active {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: 2s;
-}
-
 .function__content:hover .slide {
     opacity: 1;
-    transition: 0.5s ease;
+    transition: 1s ease;
 }
 
 .function__bg {
-    width: 70vh;
-    height: 60vh;
+    width: 100%;
+    height: 90%;
     position: absolute;
 }
 
 .function__bg--circle {
     background-image: url("../img/bg-circle-2.png");
-    width: 34vw;
-    height: 59vh;
+    width: 160px;
+    height: 125px;
+    top: 66%;
+    left: 6%;
     opacity: 0.3;
     position: absolute;
     background-repeat: no-repeat;
-    background-position: center bottom;
 }
 
 .function__bg--number {
-    width: 50vh;
-    height: 55vh;
+    width: 200px;
+    height: 250px;
+    top: 25%;
     background-image: url("../img/2.png");
-    background-position: center bottom;
     background-repeat: no-repeat;
     position: absolute;
 }
 
 @media only screen and (max-width: 768px) {
+    .function {
+        padding: 5vh;
+    }
     .function__container {
         width: 80%;
     }
     
     .function__content-container {
-        min-height: 40vh;
+        min-height: 22vh;
+        margin: 2%;
     }
 
     .function__content {
@@ -280,6 +267,7 @@ p::selection {
     .function__img {
         display: flex;
         min-height: 100%;
+        margin: 10% auto;
         text-align: center;
         align-items: center;
         flex-direction: column;
@@ -300,9 +288,6 @@ p::selection {
 }
 
 @media (max-width: 420px) {
-    .function__img {
-        height: 67vh;
-    }
     .slide {
         background-color: rgba(44, 45, 63, 0.623);
         width: 60vw;
