@@ -37,7 +37,7 @@ p::selection {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     text-align: left;
-    padding: 2rem;
+    padding-top: 5rem;
     display: flex;
     padding-bottom: 10vh;
 }
@@ -53,6 +53,11 @@ p::selection {
 
 .about__title p {
     margin: 3vh 0;
+    font-size: 2rem;
+}
+
+.about__content p {
+    font-size: 2rem;
 }
 
 .about__container {
@@ -95,8 +100,8 @@ p::selection {
     background-image: url("../img/bg-circle.png");
     width: 200px;
     height: 250px;
-    right: 10%;
-    bottom: 0;
+    top: 17rem;
+    right: 2rem;
     align-items: flex-end;
     opacity: 0.31;
     position: absolute;
@@ -107,7 +112,8 @@ p::selection {
     width: 200px;
     height: 250px;
     background-image: url("../img/1.png");
-    right: 18%;
+    top: 5rem;
+    right: 5rem;
     background-repeat: no-repeat;
     position: absolute;
 }
@@ -451,7 +457,7 @@ h2 {
 .function {
     background-color: rgb(55, 56, 73);
     position: relative;
-    padding: 2rem;
+    padding-top: 5rem;
     display: flex;
     padding-bottom: 20vh;
 }
@@ -527,6 +533,7 @@ h2 {
     max-height: 0;
     color: white;
     transition: 1s ease-in-out;
+    font-size: 2rem;
 }
 
 .slide p {
@@ -547,9 +554,9 @@ h2 {
 }
 
 .function__bg--circle {
-    background-image: url("../img/bg-circle-2.png");
+    background-image: url("../img/bg-circle.png");
     width: 160px;
-    height: 125px;
+    height: 250px;
     top: 233px;
     left: 83px;
     opacity: 0.3;
@@ -617,7 +624,7 @@ h2 {
 /* packages */
 
 .packages {
-    background-color: rgb(44, 45, 63);
+    background-color: rgb(55, 56, 73);
     padding: 2rem;
     position: relative;
     padding-top: 5rem;
@@ -860,6 +867,16 @@ h2 {
 
 .contact__icon--responsive {
     display: none;
+}
+
+@media (max-width: 1734px){
+    .contact__icon {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
