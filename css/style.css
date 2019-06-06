@@ -100,7 +100,7 @@ p::selection {
     background-image: url("../img/bg-circle.png");
     width: 200px;
     height: 250px;
-    top: 17rem;
+    top: kka17rem;
     right: 2rem;
     align-items: flex-end;
     opacity: 0.31;
@@ -206,6 +206,13 @@ h3 {
     background-position: center 10%;
 }
 
+.banner__responsivo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
 .title__style {
     font-weight: 700;
 }
@@ -222,7 +229,6 @@ h3 {
     background-size: cover;
     
 }
-
 
 .banner-title__principal::selection, .banner-title__checked::selection  {
     background: rgb(21, 199, 140);
@@ -241,7 +247,6 @@ h3 {
     color: #FFFFFF;
     text-align: right;
     width: 50%;
-    float: right;
 }
 
 
@@ -250,7 +255,6 @@ h3 {
     font-size: 3rem;
     color:#01FDAF;
 }
-
 
 
 
@@ -339,6 +343,12 @@ h3 {
 
 @media (max-width: 420px){
     .banner__responsivo {
+            display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    } 
+    .banner-title {
         display: flex;
         justify-content: center;
     }
