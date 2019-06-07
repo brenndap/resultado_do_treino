@@ -1,5 +1,5 @@
 * {
-
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -37,7 +37,7 @@ p::selection {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     text-align: left;
-    padding: 2rem;
+    padding-top: 5rem;
     display: flex;
     padding-bottom: 10vh;
 }
@@ -53,6 +53,11 @@ p::selection {
 
 .about__title p {
     margin: 3vh 0;
+    font-size: 2rem;
+}
+
+.about__content p {
+    font-size: 2rem;
 }
 
 .about__container {
@@ -95,8 +100,8 @@ p::selection {
     background-image: url("../img/bg-circle.png");
     width: 200px;
     height: 250px;
-    right: 10%;
-    bottom: 0;
+    top: kka17rem;
+    right: 2rem;
     align-items: flex-end;
     opacity: 0.31;
     position: absolute;
@@ -107,7 +112,8 @@ p::selection {
     width: 200px;
     height: 250px;
     background-image: url("../img/1.png");
-    right: 18%;
+    top: 5rem;
+    right: 5rem;
     background-repeat: no-repeat;
     position: absolute;
 }
@@ -125,7 +131,7 @@ p::selection {
     .about__content {
         justify-content: space-around;
         width: 100%;
-  }
+    }
 }
 
 h3 {
@@ -137,13 +143,13 @@ h3 {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .title::-moz-selection {
     background: rgb(44, 45, 63);
 }
-  
+
 .title::selection {
     background: rgb(44, 45, 63);
 }
@@ -197,7 +203,14 @@ h3 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    background-position: center 10%;
+    background-position: center 9rem;
+}
+
+.banner__responsivo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
 }
 
 .title__style {
@@ -217,7 +230,6 @@ h3 {
     
 }
 
-
 .banner-title__principal::selection, .banner-title__checked::selection  {
     background: rgb(21, 199, 140);
     opacity: 0.7;
@@ -235,7 +247,6 @@ h3 {
     color: #FFFFFF;
     text-align: right;
     width: 50%;
-    float: right;
 }
 
 
@@ -244,7 +255,6 @@ h3 {
     font-size: 3rem;
     color:#01FDAF;
 }
-
 
 
 
@@ -295,17 +305,17 @@ h3 {
 
 @media(max-width: 720px) {
     .logo {
-        width: 20vw;
+        width: 22vw;
     }
-
+    
     .banner-title {
         margin-left: 70px;
     }
-
+    
     .banner-title__principal {
         text-align: center;
     }
-
+    
     .circles__position {
         display: none;
     }
@@ -317,13 +327,13 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .newsletter__email {
         border-radius: 3.125rem;
         width: 200px;
         padding: 1.2rem;
     }
-
+    
     .newsletter__button {
         margin-top: 1rem;
         border-radius: 3.125rem;
@@ -332,14 +342,34 @@ h3 {
 
 
 @media (max-width: 420px){
+    .banner {
+        background-image: url(../img/banner-bg.png);
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-position: center;
+        margin-top: 4rem;
+    }
     .banner__responsivo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    } 
+    .banner-title {
         display: flex;
         justify-content: center;
     }
     .banner-title__principal {
+        font-size: 2.25rem;
         text-align: center;
         clear: both;
         width: 100%;
+    }
+    .banner-title__checked {
+        font-size: 2.25rem;
     }
 }
 
@@ -351,7 +381,7 @@ h2 {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .title__line-app {
@@ -430,17 +460,21 @@ h2 {
         text-align: center;
     }
     
-        
     .app__phone > img, .app__bg-circle-3, .app__bg-3 {
-        display: none;  
-                    
+        display: none;                
     }  
 } 
 
-@media (max-width: 420){
+@media (max-width: 768px) {
+    .title__h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px){
     .title__line {
         text-align: center;
-
+        
     }
 }
 
@@ -451,7 +485,7 @@ h2 {
 .function {
     background-color: rgb(55, 56, 73);
     position: relative;
-    padding: 2rem;
+    padding-top: 5rem;
     display: flex;
     padding-bottom: 20vh;
 }
@@ -527,6 +561,7 @@ h2 {
     max-height: 0;
     color: white;
     transition: 1s ease-in-out;
+    font-size: 2rem;
 }
 
 .slide p {
@@ -547,9 +582,9 @@ h2 {
 }
 
 .function__bg--circle {
-    background-image: url("../img/bg-circle-2.png");
+    background-image: url("../img/bg-circle.png");
     width: 160px;
-    height: 125px;
+    height: 250px;
     top: 233px;
     left: 83px;
     opacity: 0.3;
@@ -574,15 +609,19 @@ h2 {
         width: 80%;
     }
     
+    .function__title {
+        text-align: center;
+    }
+    
     .function__content-container {
         min-height: 22vh;
         margin: 2%;
     }
-
+    
     .function__content {
         width: 100%;
     }
-
+    
     .function__img {
         display: flex;
         min-height: 100%;
@@ -591,12 +630,12 @@ h2 {
         align-items: center;
         flex-direction: column;
     }
-
+    
     .slide {
         background-color: rgba(44, 45, 63, 0.623);
         width: 60vw;
     }
-
+    
     .function__content--img {
         width: 60vw;
     }
@@ -610,14 +649,14 @@ h2 {
     .slide {
         background-color: rgba(44, 45, 63, 0.623);
         width: 60vw;
-  }
+    }
 }
-    
+
 
 /* packages */
 
 .packages {
-    background-color: rgb(44, 45, 63);
+    background-color: rgb(55, 56, 73);
     padding: 2rem;
     position: relative;
     padding-top: 5rem;
@@ -627,6 +666,7 @@ h2 {
 .packages__box {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -639,12 +679,16 @@ h2 {
     margin: 3rem;
 }
 
+.packages__deal h3 {
+    font-size: 3rem;
+}
+
 .packages__deal:hover {
     background-color: rgb(30, 243, 176);
 }
 
 .packages__text {
-    margin-top: 7rem;
+    margin-top: 6rem;
     font-size: 2rem;
     min-height: 20rem;
     min-width: 20rem;
@@ -703,12 +747,16 @@ h2 {
     .packages__deal {
         width: 30%;
     }
-
+    
+    .packages__deal h3 {
+        font-size: 2rem;
+    }
+    
     .packages__bg--number4,
     .packages__bg--circles {
         display: none;
     }
-
+    
     .packages__box {
         flex-direction: row;
         background-image: url("../img/bg-circle.png");
@@ -717,30 +765,52 @@ h2 {
     }
 } 
 
+
+@media (max-width: 900px) {
+    .packages__text {
+        margin-top: 6rem;
+        font-size: 2rem;
+        min-height: 32rem;
+        min-width: 10rem;
+    }
+}
+
 @media (max-width: 768px) {
     .packages {
         width: 100%;
     }
-
+    
     .title__line {
         margin: 0 auto;
         margin-bottom: 1.25rem;
-
+        
     }
-
+    
     .title {
         text-align: center;
     }
-
+    
     .packages__box {
         flex-direction: column;
     }
     
     .packages__deal {
         width: 80%;
-
     }
 }
+
+@media (max-width: 420px) {
+    .packages__deal h3 {
+        font-size: 2.25rem;
+    }
+    .packages__text {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        min-height: 20rem;
+        min-width: 0;
+    }
+}
+
 
 /* CONTACT SECTION */
 
@@ -760,8 +830,6 @@ h2 {
     font-size: 1.6rem;
     
 }
-
-
 
 .form__field {
     display: flex;
@@ -854,7 +922,7 @@ h2 {
     bottom: 3.3rem;
     right: 6.1rem;
     background-image: url(../img/bg-circle-2.png);
-
+    
     
 }
 
@@ -862,44 +930,58 @@ h2 {
     display: none;
 }
 
+@media (max-width: 1734px){
+    .contact__icon {
+        display: none;
+    }
+    
+    .circle {
+        display: none;
+    }
+}
+
 @media (max-width: 768px){
     
     .circle {
         display: none;
     } 
-
-    .form__title {
-        text-align: left;
+    
+    .form__title {        
+        text-align: -webkit-center;
     }
-
+    
     .contact__icon {
         display: none;
     }
-
-        
+    
+    .contact__form {
+        padding: 0;
+    }
+    
+    
 }
 
 @media (max-width: 420px){
     .contact__container {
-        width: 35rem;
+        width: 34rem;
     }
-
+    
     .circle {
         display: none;
     }
-
+    
     .form__title {
         text-align: center;
     }
-
+    
     .title__line--dark {
         margin: 0 auto;
     }
-
+    
     .contact__icon {
         display: none;
     }
-
+    
     
     .form__submit {
         width: 12rem;
@@ -937,7 +1019,7 @@ h2 {
 
 .footer__social-media {
     font-size: 2.7rem;
-
+    
 }
 
 .social-media__link {
@@ -953,9 +1035,9 @@ h2 {
 @media (max-width: 768px){
     .footer__container {
         flex-direction: column;
-
-       
-
+    }
+    .footer__text {
+        text-align: center;
     }
 }
 

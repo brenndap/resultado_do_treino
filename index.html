@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=cv">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Andrezza Almeida, Brennda Farinha, Carina Di Domenico, Marília Cavalcante, Roberta Cintra">
+    <meta name="author"
+        content="Andrezza Almeida, Brennda Farinha, Carina Di Domenico, Marília Cavalcante, Roberta Cintra">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
 
     <header id="top">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><img class="logo" src="./img/component.png"
                     alt="logotipo do site: um R e um T maiúsculos"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -68,25 +69,33 @@
     <!--NEWSLETTER-->
 
     <main>
-        
+
+        <section class="newsletter">
+            <h3 class="newsletter__title">Receba todas as novidades por e-mail</h3>
+            <input class="newsletter__email" type="email" placeholder="Digite seu e-mail"><button
+                class="newsletter__button">Inscreva-se</button>
+        </section>
+
         <!-- INÍCIO PARA QUEM -->
-        
+
         <section id="about" class="about">
             <div class="about__container">
                 <div class="about__title">
                     <hr class="title__line">
-                    <h2>Para quem?</h2>
-                    <p class="about__subtitle">O Resultado do Treino é perfeito para academias de diversos portes! Ajude seu aluno a ter muito mais <span class="about__subtitle--green">resultado </span>e ainda aumente seu <span class="about__subtitle--green">faturamento</span>.</p>
+                    <h2 class="title">Para quem?</h2>
+                    <p class="about__subtitle">O Resultado do Treino é perfeito para academias de diversos portes! Ajude
+                        seu aluno a ter muito mais <span class="about__subtitle--green">resultado </span>e ainda aumente
+                        seu <span class="about__subtitle--green">faturamento</span>.</p>
                 </div>
                 <div class="about__content">
                     <div class="about__img">
                         <img class="about__img--gym" src="img/gym.png" alt="Ícone academia">
                         <p>Academias</p>
-                    </div> 
+                    </div>
                     <div class="about__img">
                         <img class="about__img--user" src="img/users.png" alt="Ícone usuários">
                         <p>Usuários</p>
-                    </div>              
+                    </div>
                 </div>
             </div>
             <div class="about__bg">
@@ -94,11 +103,11 @@
                 <div class="about__bg--circle"></div>
             </div>
         </section>
-        
+
         <!-- FIM PARA QUEM -->
-        
+
         <!-- INÍCIO COMO FUNCIONA -->
-        
+
         <section id="function" class="function">
             <div class="function__container">
                 <div class="function__title">
@@ -109,36 +118,45 @@
                     <div class="function__content-container">
                         <div class="function__content">
                             <div>
-                                <img class="function__content--img" src="img/book.jpeg" alt="Mesa de escritório com tablet, caneta e café">
+                                <img class="function__content--img" src="img/book.jpeg"
+                                    alt="Mesa de escritório com tablet, caneta e café">
                             </div>
                             <div class="slide">
                                 <p>Peça uma demo</p>
                                 <button class="function__button btn--book">+</button>
                             </div>
                         </div>
-                        <div class="slide__book slide__text"><hr class="title__line">Preencha nosso cadastro e nossos consultores entrarão em contato para apresentar o produto.
+                        <div class="slide__book slide__text">
+                            <hr class="title__line">Preencha nosso cadastro e nossos consultores entrarão em contato
+                            para apresentar o produto.
                         </div>
                     </div>
                     <div class="function__content-container">
                         <div class="function__content">
-                            <img class="function__content--img" src="img/try.jpeg" alt="Grupo de amigas mexendo no celular">
+                            <img class="function__content--img" src="img/try.jpeg"
+                                alt="Grupo de amigas mexendo no celular">
                             <div class="slide">
                                 <p>Experimente o serviço</p>
                                 <button class="function__button btn--try">+</button>
                             </div>
                         </div>
-                        <div class="slide__try slide__text"><hr class="title__line">Ofereça o serviço para 10 alunos e entenda como é fácil implementar o resultado do treino.
+                        <div class="slide__try slide__text">
+                            <hr class="title__line">Ofereça o serviço para 10 alunos e entenda como é fácil implementar
+                            o resultado do treino.
                         </div>
                     </div>
                     <div class="function__content-container">
                         <div class="function__content">
-                            <img class="function__content--img" src="img/revenues.jpeg" alt="Pessoa montando um gráfico com blocos de madeira">
+                            <img class="function__content--img" src="img/revenues.jpeg"
+                                alt="Pessoa montando um gráfico com blocos de madeira">
                             <div class="slide">
                                 <p>Aumente seu faturamento</p>
                                 <button class="function__button btn--revenue">+</button>
                             </div>
                         </div>
-                        <div class="slide__revenue slide__text"><hr class="title__line">Tenha o app na sua academia e aumente seu faturamento já no primeiro mês.</div>
+                        <div class="slide__revenue slide__text">
+                            <hr class="title__line">Tenha o app na sua academia e aumente seu faturamento já no primeiro
+                            mês.</div>
                     </div>
                 </div>
             </div>
@@ -147,19 +165,10 @@
                 <div class="function__bg--circle"></div>
             </div>
         </section>
-        
+
         <!-- FINAL COMO FUNCIONA -->
-        
-        
 
-        <section class="newsletter">
-            <h3 class="newsletter__title">Receba todas as novidades por e-mail</h3>
-            <input class="newsletter__email" type="email" placeholder="Digite seu e-mail"><button
-                class="newsletter__button">Inscreva-se</button>
-        </section>
-
-        <section></section>
-        <section></section>
+        <!-- INÍCIO APP -->
 
         <section class="app" id="app">
             <div class="container">
@@ -212,8 +221,10 @@
             <div class="app__bg-circle-3"></div>
         </section>
 
+        <!-- FINAL APP -->
 
-        <!-- packages start -->
+
+        <!-- PACKAGES START -->
 
         <section class="packages" id="packages">
             <div class="container">
@@ -227,54 +238,49 @@
                 </div>
                 <div class="packages__box">
                     <div class="packages__deal">
-                        <h3>Prata</h3>
-                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
-                            benefícios únicos para cada um</p>
+                        <h3>Experimentação</h3>
+                        <p class="packages__text">Experimente nossa solução por 1 mês, ofereça para 10 alunos e descubra
+                            que é uma excelente escolha para o seu negócio.</p>
 
                         <div class="packages__footer">
-                            <button class="packages__btn">Comprar</button>
+                            <a href="#contact"><button class="packages__btn">Agendar demo</button></a>
                         </div>
 
                     </div>
 
                     <div class="packages__deal">
-                        <h3>Ouro</h3>
-                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
-                            benefícios únicos para cada um</p>
+                        <h3>Na medida</h3>
+                        <p class="packages__text">Já conhece o nosso produto e não vê a hora de oferecer para todos os
+                            seus alunos? Contrate 500 licenças/mês e receba todo o kit implantação.</p>
                         <div class="packages__footer">
-                            <button class="packages__btn">Comprar</button>
+                            <a href="#contact"><button class="packages__btn">Contrate já</button></a>
                         </div>
                     </div>
 
                     <div class="packages__deal">
-                        <h3>Diamante</h3>
-                        <p class="packages__text">O resultado do treino pode ser usado por públicos diferentes trazendo
-                            benefícios únicos para cada um</p>
+                        <h3>White label</h3>
+                        <p class="packages__text">Quer oferecer nossa solução, mas com um App próprio com a sua marca?
+                            Vamos conversar e construir um orçamento. A partir de R$20.000,00/mês.</p>
                         <div class="packages__footer">
-                            <button class="packages__btn">Comprar</button>
+                            <a href="#contact"><button class="packages__btn">Agendar reunião</button></a>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </div>
 
         </section>
 
-        <!-- packages end -->
+        <!-- PACKAGES END -->
 
-
+        <!-- INÍCIO CONTATO -->
         <section class="contact" id="contact">
             <div class="container">
-                
+
                 <div class="form__title">
                     <hr class="title__line--dark">
                     <h2>Contato</h2>
                 </div>
-                
+
                 <div class="contact__container">
 
                     <div class="circle circle--left"></div>
@@ -320,7 +326,11 @@
 
         </section>
 
-        
+        <!-- FINAL CONTATO -->
+
+
+        <!-- INÍCIO FOOTER -->
+
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -332,10 +342,11 @@
                         class="fab fa-instagram"></i></a>
                 <a class="social-media__link" href="https://www.linkedin.com/company/n2b-brasil/"><i
                         class="fab fa-linkedin"></i></a>
-
             </div>
         </div>
     </footer>
+
+    <!-- FINAL FOOTER -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -348,7 +359,6 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-
 
 
 </body>
